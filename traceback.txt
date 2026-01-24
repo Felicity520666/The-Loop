@@ -1,33 +1,33 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 16, in script
-    show unkown normal with pixel
-  File "game/script.rpy", line 16, in <module>
-    show unkown normal with pixel
-                            ^^^^^
-NameError: name 'pixel' is not defined. Did you mean: 'Fixed'?
+  File "game/script.rpy", line 60, in script
+    with ypunch
+  File "game/script.rpy", line 60, in <module>
+    with ypunch
+         ^^^^^^
+NameError: name 'ypunch' is not defined. Did you mean: 'vpunch'?
 
 -- Full Traceback ------------------------------------------------------------
 
 Traceback (most recent call last):
-  File "game/script.rpy", line 16, in script
-    show unkown normal with pixel
-  File "renpy/ast.py", line 1577, in execute
-    paired = renpy.python.py_eval(self.paired)
-             ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "game/script.rpy", line 60, in script
+    with ypunch
+  File "renpy/ast.py", line 1574, in execute
+    trans = renpy.python.py_eval(self.expr)
+            ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
   File "renpy/python.py", line 1292, in py_eval
     return py_eval_bytecode(code, globals, locals)
            ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
   File "renpy/python.py", line 1285, in py_eval_bytecode
     return eval(bytecode, globals, locals)
            ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "game/script.rpy", line 16, in <module>
-    show unkown normal with pixel
-                            ^^^^^
-NameError: name 'pixel' is not defined. Did you mean: 'Fixed'?
+  File "game/script.rpy", line 60, in <module>
+    with ypunch
+         ^^^^^^
+NameError: name 'ypunch' is not defined. Did you mean: 'vpunch'?
 
-macOS-15.7.2-arm64-arm-64bit arm64
+macOS-15.7.3-arm64-arm-64bit arm64
 Ren'Py 8.4.1.25072401
 The Loop 1.0
-Thu Jan 15 18:16:23 2026
+Sat Jan 24 14:44:27 2026
