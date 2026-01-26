@@ -49,7 +49,7 @@ label start:
     with vpunch
     play sound "goodresult-82807.mp3"
     pause 2.0
-    h "HARD-TO-GET LIMITED-EDITION GAMING HEASET!!!"
+    h "HARD-TO-GET LIMITED-EDITION GAMING HEADSET!!!"
     scene wifi
     with fade
     pause 1.5
@@ -76,6 +76,22 @@ label start:
     u "But, anyway. Welcome to this tes... no, I mean, ahem--"
     play sound "8-bit-video-game-win-level-sound-version-1-145827.mp3"
     u "WELCOME TO THE GAME!"
+    h "Game...? What game?"
+    h "This feels too random..."
+    h "Oh wait---I understand now!"
+    u "You... you do...?"
+    h "Yes! I'm not that stupid!"
+    h "So the game, the helmet... It's actually meant to be played in person, right?"
+    h "Looks like I seriously underestimated what limited-edition games are capable of..."
+    u "Exactly! You're just too clever! {i}(phew...){/i}"
+    u "But anyway, here's the gameplay."
+    u "Your goal is to dodge all the blocks before the hourglass at the top left corner runs out."
+    u "Good luck."
+    play music "retro-game-music-245230.mp3" fadein 2.0
+    scene dodge
+    with pixellate
+    pause 5.5
+    
 
     
 
