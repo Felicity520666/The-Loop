@@ -36,7 +36,7 @@ label start:
     scene hack
     with fade
     u "Human target acquired. Initiating system entry."
-    stop music fadeout 1.5
+    stop music fadeout 2.5
     play music "kids-happy-469474.mp3" fadein 1.5
     scene check
     with Fade(0.0, 0.0, 3.0)
@@ -108,7 +108,16 @@ label start:
     pause 3.5
     scene 3
     with Fade(3.0, 0.0, 3.0)
-    pause 3.5
+    pause 4.5
+    scene entre
+    with pixellate
+    play music "game-electronic-music-421999.mp3" fadein 1.0
+    pause 1.0
+    h "What?! Why am I here again!"
+    show unkown at smallright
+    with dissolve
+    u "Ha, sorry, dude."
+    u ""
 
 
     
