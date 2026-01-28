@@ -37,9 +37,9 @@ label start:
     with fade
     u "Human target acquired. Initiating system entry."
     stop music fadeout 1.5
+    play music "kids-happy-469474.mp3" fadein 1.5
     scene check
     with Fade(0.0, 0.0, 3.0)
-    play music "kids-happy-469474.mp3" fadein 1.5
     pause 2.5
     show haca happy at smallleft 
     with moveinright
@@ -54,6 +54,7 @@ label start:
     with fade
     pause 1.5
     h "Let me just connect it real quick..."
+    pause 2.5
     play sound "ding-402325.mp3" volume 6.5
     h "Ok! Connected!"
     h "And let me put on my gaming helmet..."
@@ -91,7 +92,24 @@ label start:
     scene dodge
     with pixellate
     pause 5.5
-    
+    stop music fadeout 2.0
+    scene later
+    with pixellate
+    play sound "later.mp3"
+    pause 4.5
+    scene 1
+    with fade
+    show haca game at smallleft
+    with dissolve
+    h "{i}Phew{/i}, just in time! Great jo..."
+    play music "desert-danger-34602.mp3" fadein 1.5
+    scene 2 
+    with Fade(3.0, 0.0, 3.0)
+    pause 3.5
+    scene 3
+    with Fade(3.0, 0.0, 3.0)
+    pause 3.5
+
 
     
 
