@@ -16,6 +16,14 @@ transform smallleft:
     xalign -0.05
     yalign 1.0
 
+transform smallright_blur(amount_end, speed):
+    zoom 0.2
+    xalign 0.95
+    yalign 1.0
+    blur 0
+    linear speed blur amount_end
+
+
 # The game starts here.
 
 label start:
@@ -72,22 +80,33 @@ label start:
     show unkown at smallright
     with dissolve
     u "Hello there, little human."
+    show unkown at smallright_blur(50.0, 0.3)
     h "Who... who are you?"
+    hide unkown
+    show unkown at smallright
     u "I choose not to tell you..."
     u "But, anyway. Welcome to this tes... no, I mean, ahem--"
     play sound "8-bit-video-game-win-level-sound-version-1-145827.mp3"
     u "WELCOME TO THE GAME!"
+    show unkown at smallright_blur(50.0, 0.3)
     h "Game...? What game?"
     h "This feels too random..."
     h "Oh wait---I understand now!"
+    hide unkown
+    show unkown at smallright
     u "You... you do...?"
+    show unkown at smallright_blur(50.0, 0.3)
     h "Yes! I'm not that stupid!"
     h "So the game, the helmet... It's actually meant to be played in person, right?"
     h "Looks like I seriously underestimated what limited-edition games are capable of..."
+    hide unkown
+    show unkown at smallright
     u "Exactly! You're just too clever! {i}(phew...){/i}"
     u "But anyway, here's the gameplay."
     u "Your goal is to dodge all the blocks before the hourglass at the top left corner runs out."
     u "Good luck."
+    hide unkown
+    with dissolve
     play music "retro-game-music-245230.mp3" fadein 2.0
     scene dodge
     with pixellate
@@ -119,6 +138,7 @@ label start:
     u "Ha, sorry, dude."
     u "The hourglass has been reset, so you have to start over again."
     u "This also means you can't exit the game right now, so..."
+    show unkown at smallright_blur(50, 0.3)
     h "What?! So it's a loop?"
     h "{i}Sigh{/i}... At least this is a fun game, good thing it's not boring. Fine. I'll play it again."
     play music "retro-game-music-245230.mp3" fadein 2.0
