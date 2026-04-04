@@ -29,7 +29,7 @@ label start:
     u "Quite beautiful isn't it?"
     u "The most advanced life form is currently identified as this thing called humans..."
     u "Precise information has not yet been collected."
-    u "It is necessary to dispatch one individual to gather intellidence..."
+    u "It is necessary to dispatch one individual to gather intelligence..."
     u "Uh..."
     u "Because the captain thought there would be no intelligent beings here, only I was sent out..."
     u "So I guess I'll have to gather the information myself..."
@@ -62,7 +62,7 @@ label start:
     scene getin
     with hpunch
     play music "sucking-in-48042.mp3"
-    h "Wait--what's hapening?! Nooo! Ahhhhh--I'm being pulled in!"
+    h "Wait--what's happening?! Nooo! Ahhhhh--I'm being pulled in!"
     h "HELP!!!"
     stop music fadeout 1.0
     scene entre with pixellate
@@ -120,7 +120,7 @@ label start:
     u "The hourglass has been reset, so you have to start over again."
     u "This also means you can't exit the game right now, so..."
     h "What?! So it's a loop?"
-    h "{i}Sign{/i}... At least this is a fun game, good thing it's not boring. Fine. I'll play it again."
+    h "{i}Sigh{/i}... At least this is a fun game, good thing it's not boring. Fine. I'll play it again."
     play music "retro-game-music-245230.mp3" fadein 2.0
     scene dodge
     with pixellate
@@ -248,6 +248,7 @@ label play:
     h "How many years have I been running in here already?!"
     h "Why can't I get out!!!"
     h "Looks like I'm going to be trapped in this endless loop forever..."
+    h "FOREVER!!!"
     stop music fadeout 1.0
     scene end  
     play sound "lose.mp3"
