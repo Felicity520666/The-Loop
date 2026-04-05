@@ -1,18 +1,18 @@
-2026-04-04 22:44:25 UTC
+2026-04-05 14:33:59 UTC
 macOS-15.7.3-arm64-arm-64bit
 Ren'Py 8.4.1.25072401
 
 Early init took 17 ms
 Loading error handling took 11 ms
-Loading script took 66 ms
+Loading script took 64 ms
 Loading save slot metadata took 11 ms
 Loading persistent took 0 ms
-Running init code took 16 ms
-Loading analysis data took 1 ms
+Running init code took 25 ms
+Loading analysis data took 2 ms
 Analyze and compile ATL took 0 ms
-Reloading save slot metadata took 4 ms
+Reloading save slot metadata took 6 ms
 Backing up script files to '/Users/felicity/Library/RenPy/backups/The-Loop':
-Dump and make backups took 14 ms
+Dump and make backups took 24 ms
 Cleaning cache took 0 ms
 Making clean stores took 0 ms
 Initial gc took 12 ms
@@ -24,9 +24,9 @@ Load screen analysis took 0 ms
 Analyze screens took 3 ms
 Save screen analysis took 4 ms
 Save pyanalysis took 0 ms
-Save bytecode took 11 ms
+Save bytecode took 0 ms
 Running _start took 0 ms
-Interface start took 261 ms
+Interface start took 250 ms
 
 Initializing gl2 renderer:
 primary display bounds: (0, 0, 1470, 956)

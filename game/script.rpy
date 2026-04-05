@@ -139,7 +139,7 @@ label start:
     u "The hourglass has been reset, so you have to start over again."
     u "This also means you can't exit the game right now, so..."
     show unkown at smallright_blur(50, 0.3)
-    h "What?! So it's a loop?"
+    h "What?! So it's a {b}loop{/b}?"
     h "{i}Sigh{/i}... At least this is a fun game, good thing it's not boring. Fine. I'll play it again."
     play music "retro-game-music-245230.mp3" fadein 2.0
     scene dodge
@@ -241,8 +241,9 @@ label hack:
     h "Thank goodness I acted in time..."
     show haca happy at smallleft
     with dissolve
-    h "Looks like programming really can save lives!"
-    play music "yay.mp3"
+    h "Looks like {b}programming really can save lives{/b}!"
+    stop music fadeout 1.5
+    play sound "yay.mp3"
     scene end
     with fade
     pause 2.5
